@@ -49,7 +49,7 @@ class Preparation():
         return df
 
 # Encoding
-class Encode():
+class Encoding():
     def Encode(Data_Trans):
     
         data = [['ID'+str(i+1), seq] for i, seq in enumerate(Data_Trans)] # Adjust and Rearrange data corresponding to model
