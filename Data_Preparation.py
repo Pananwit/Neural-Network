@@ -52,7 +52,7 @@ class Preparation():
 class Encoding():
     def Encode(Data_Trans):
     
-        data = [['ID'+str(i+1), seq] for i, seq in enumerate(Data_Trans)] # Adjust and Rearrange data corresponding to model
+        data = [['ID'+str(i+1), seq] for i, seq in enumerate(Data_Trans[0)] # Adjust and Rearrange data corresponding to model
     
         model, alphabet = esm.pretrained.esm2_t33_650M_UR50D() # Claim a model from ESM2
         batch_converter = alphabet.get_batch_converter()
